@@ -10,8 +10,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
-    
-
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_list">
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,11 +23,12 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="#61380B"
-            android:background="#3061380B"/>
+            android:background="@drawable/shape_title"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/author01"
+            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="#22741C"/>
     <TextView
@@ -34,21 +38,28 @@
             android:singleLine="true"
             android:ellipsize="marquee"
             android:textSize="15sp"/>
+    </LinearLayout>
 
+    <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_list">
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:text="@string/title02"
             android:textSize="18sp"
             android:gravity="center"
             android:textStyle="bold"
             android:textColor="#61380B"
-            android:background="#3061380B"/>
+            android:background="@drawable/shape_title"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/author02"
+            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="#22741C"/>
     <TextView
@@ -58,5 +69,6 @@
             android:singleLine="true"
             android:ellipsize="marquee"
             android:textSize="15sp"/>
-    
+    </LinearLayout>
+
   </LinearLayout>
